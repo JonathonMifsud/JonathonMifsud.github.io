@@ -272,8 +272,8 @@ display_categories: ['blockquotes'] # these categories will be displayed on the 
 
 scholar:
 
-  last_name: [Mifsud]
-  first_name: [Jonathon, C.O.]
+  last_name: ["Mifsud", "Mifsud<sup>*</sup>", "Mifsud*"]
+  first_name: ["Jonathon C.O.", "J.C.O.", "Jonathon C. O.", "J. C. O.", "Jonathon", "Jonathon CO", "J. C.", "Jonathon C O", "J.", "J C O", "J C", "J C O Mifsud", "J C Mifsud", "J Mifsud", "JCO Mifsud", "JC Mifsud", "JMifsud", "JCOMifsud", "JCMifsud", "JMifsud", "JCOM", "JCM", "JM"]
 
   style: apa
   locale: en
