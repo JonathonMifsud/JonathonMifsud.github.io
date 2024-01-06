@@ -5,11 +5,11 @@ layout: default
 <div class="post">
   <header class="post-header text-center">
     {% if page.profile %}
-    <div class="profile center" style="text-align: center;">
+    <div class="profile center" style="display: flex; justify-content: center; margin-bottom: 20px;"> <!-- Flexbox styling added for centering -->
       {% if page.profile.image %}
         {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
         {% assign profile_image_class = "img-fluid z-depth-1 rounded-circle" %}
-        {% capture sizes %}120px{% endcapture %} <!-- Adjusted size -->
+        {% capture sizes %}420px{% endcapture %} <!-- Adjusted size -->
         {% include figure.html
            path = profile_image_path
            class = profile_image_class
@@ -35,8 +35,6 @@ layout: default
 
   <article>
     <div class="affiliations text-center">
-      <p><em>Position, Department</em></p>
-      <p><em>Institution Name, Country</em></p>
       <!-- Add more affiliation details here if needed -->
     </div>
 
@@ -44,9 +42,40 @@ layout: default
 
 
     <div class="main-content">
-      <p>Welcome to my academic profile. Here, you will find information about my research interests, publications, and contributions to the field of [Your Field]. I am passionate about [Brief Description of Research Interest].</p>
-      <p>[Additional Information]</p>
-      <!-- More main content goes here -->
+      <body>
+    <h1>Hey, I'm Jon</h1>
+    <p>
+        I am a 3rd year Ph.D. student in the Virus Evolution Lab under the supervision of 
+        <a href="https://www.sydney.edu.au/medicine-health/about/our-people/academic-staff/edward.holmes.html">Prof Edward Holmes</a> 
+        at the University of Sydney, Australia.
+    </p>
+
+    <h2>Overview</h2>
+    <p>
+        I completed my Bachelor of Advanced Science in Biology at Macquarie University in 2018, followed by a Master of Research in early 2021. 
+        My master's thesis, under <a href="https://www.westernsydney.edu.au/hie/people/researchers/associate_professor_rachael_gallagher">Assoc Prof Rachael Gallagher</a> and <a href="https://micro.otago.ac.nz/our-people/teaching-research-and-support/jemma-geoghegan/">Prof Jemma Geoghegan</a>, focused on exploring the plant virosphere using transcriptome data.
+    </p>
+    <p>
+        Since beginning my Ph.D. in June 2021, I have dabbled in two main areas:
+    </p>
+    <ol>
+        <li>
+            <strong>Virus Discovery for Reconstructing the Evolutionary History of Virus Families:</strong> 
+            The virosphere, largely unexplored, is skewed towards organisms of economic importance. Taxa like the ‘basal metazoans’ are vastly understudied and may provide insights into the long-term evolutionary history of virus families. The decreasing cost of metagenomic sequencing has broadened the species diversity in transcriptome studies. The secondary analysis of existing transcriptome data, known as transcriptome mining, can circumvent challenges like securing funding for virus discovery in less economically prioritized taxa. This approach has significantly contributed to the rapid expansion of our knowledge regarding virus biodiversity. We have recently used this method to explore the <a href="https://academic.oup.com/ve/article/9/1/veac124/6960983">Flaviviridae</a>.
+        </li>
+        <br>
+        <li>
+            <strong>Identifying Potential Viral Etiological Agents in Wildlife:</strong> 
+            Wildlife serve as natural reservoirs and potential vectors of infectious diseases. Understanding the viruses they harbor is essential for wildlife health and zoonotic disease prevention. Metatranscriptomic sequencing not only characterises the viruses in a sample but gives a picture of the “total infectome”, thereby allowing for more informed decisions about potential etiological agents. In a <a href="https://www.biorxiv.org/content/10.1101/2023.11.20.567757v1.abstract">recent study</a>, we employed this method alongside traditional veterinary diagnostic techniques to discover a novel papillomavirus in a New Zealand fur seal with clinically and histologically confirmed oral papilloma-like lesions.
+        </li>
+    </ol>
+    <p>
+        Outside of this, I have an interest in developing tools for virus discovery and phylogenetics. 
+    </p>
+    <p>
+        Feel free to get in touch if you are after collaboration in any of these areas.
+    </p>
+</body>
     </div>
 
     <!-- Additional Sections (News, Posts, Publications, Social) -->
