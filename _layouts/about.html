@@ -5,11 +5,11 @@ layout: default
 <div class="post">
   <header class="post-header text-center">
     {% if page.profile %}
-    <div class="profile center" style="display: flex; justify-content: center; margin-bottom: 20px;"> <!-- Flexbox styling added for centering -->
+    <div class="profile center" style="display: flex; justify-content: center; margin-bottom: 20px; width:100%"> <!-- Flexbox styling added for centering -->
       {% if page.profile.image %}
         {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
         {% assign profile_image_class = "img-fluid z-depth-1 rounded-circle" %}
-        {% capture sizes %}420px{% endcapture %} <!-- Adjusted size -->
+        {% capture sizes %}320px{% endcapture %} <!-- Adjusted size -->
         {% include figure.html
            path = profile_image_path
            class = profile_image_class
