@@ -9,7 +9,7 @@ layout: default
       {% if page.profile.image %}
         {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
         {% assign profile_image_class = "img-fluid z-depth-1 rounded-circle" %}
-        {% capture sizes %}320px{% endcapture %} <!-- Adjusted size -->
+        {% capture sizes %}250px{% endcapture %} <!-- Adjusted size -->
         {% include figure.html
            path = profile_image_path
            class = profile_image_class
