@@ -6,7 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Jonathon
 middle_name: C.O.
 last_name: Mifsud
-email: jmif9945@uni.sydney.edu.au
+email: jon.mifsud@kuleuven.be
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
@@ -52,7 +52,7 @@ footer_fixed: true
 # Dimensions
 max_width: 800px
 
-# TODO: add layout settings (single page vs. multi-page)
+layout_mode: multi-page
 
 # -----------------------------------------------------------------------------
 # Open Graph & Schema.org
@@ -68,7 +68,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 
 github_username: JonathonMifsud # your GitHub user name
 gitlab_username: # your GitLab user name
-x_username: jonathon_mifsud # your X handle
+x_username: # your X handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: # your LinkedIn user name
 telegram_username: # your Telegram user name

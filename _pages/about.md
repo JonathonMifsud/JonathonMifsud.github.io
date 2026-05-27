@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: centre
-  image: jon_camel.jpg
+  image: jon_2025.jpg
   image_circular: false # crops the image to make it circular
 
 
