@@ -1079,3 +1079,18 @@ img[alt="Profile Image"] {
   display: block;
   margin: 0 auto 1rem auto;
 }
+
+.front-profile-image {
+  margin-bottom: 0.25rem;
+}
+
+.front-profile-image figure {
+  margin-bottom: 0.25rem;
+}
+
+.front-profile-image img {
+  max-width: 180px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}

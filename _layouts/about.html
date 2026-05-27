@@ -5,11 +5,11 @@ layout: default
 <div class="post">
   <header class="post-header text-center">
     {% if page.profile %}
-    <div class="profile center" style="display: flex; justify-content: center; margin-bottom: 20px; width:100%">
+    <div class="profile center" style="display: flex; justify-content: center; margin-bottom: 4px; width:100%">
       {% if page.profile.image %}
         {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
         {% assign profile_image_class = "img-fluid z-depth-1 rounded-circle" %}
-        {% capture sizes %}150px{% endcapture %}
+        {% capture sizes %}220px{% endcapture %}
         {% include figure.html
            path = profile_image_path
            class = profile_image_class
@@ -20,6 +20,16 @@ layout: default
       {% endif %}
     </div>
     {% endif %}
+
+    <style>
+      .post-header .profile figure {
+        margin-bottom: 0;
+      }
+
+      .post-header .post-title {
+        margin-top: 0;
+      }
+    </style>
 
     <h1 class="post-title" style="font-size: 1.75em;">
       {% if site.title == "blank" %}
